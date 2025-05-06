@@ -63,6 +63,7 @@ def go(config: DictConfig):
                     "max_price": config['etl']['max_price']
                 },
             )
+            
         if "data_check" in active_steps:
             ##################
             # Implement here #
