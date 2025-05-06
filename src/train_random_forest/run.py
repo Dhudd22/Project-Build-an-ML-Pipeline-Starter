@@ -96,6 +96,7 @@ def go(args):
 
     mlflow.sklearn.save_model(
         sk_pipe,
+        path="random_forest_dir",
         serialization_format=mlflow.sklearn.SERIALIZATION_FORMAT_CLOUDPICKLE,
         input_example = X_train.iloc[:5]
     )
