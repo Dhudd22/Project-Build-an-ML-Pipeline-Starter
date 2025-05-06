@@ -92,11 +92,10 @@ def go(args):
     
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
 
-    ex_path = 'random_forrest_dir'
+
 
     mlflow.sklearn.save_model(
         sk_pipe,
-        ex_path,
         serialization_format=mlflow.sklearn.SERIALIZATION_FORMAT_CLOUDPICKLE,
         input_example = X_train.iloc[:5]
     )
